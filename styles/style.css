@@ -1,0 +1,98 @@
+body {
+  margin: 0; }
+
+.blank {
+  background-color: #222831;
+  height: 150px;
+  width: auto; }
+
+.welcome {
+  height: 450px;
+  width: auto;
+  margin: auto;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.205) 10%, rgba(0, 0, 0, 0.267) 100%), url("/pics/living-room.jpg");
+  background-attachment: fixed;
+  background-position: 70% 50%;
+  background-repeat: no-repeat;
+  background-size: auto 170%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .welcome h1 {
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    font-size: 75px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-weight: 600; }
+  .welcome hr.hr {
+    width: 60px;
+    border-top: 2px solid whitesmoke !important; }
+  .welcome h4 {
+    font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+    font-size: 35px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 400; }
+
+.blank-2 {
+  background-color: #30475e;
+  height: auto;
+  width: auto;
+  padding: 70px 0px 70px 0px; }
+  .blank-2 .grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-auto-rows: 350px;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px; }
+    .blank-2 .grid .box-blue {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .blank-2 .grid .box-blue p {
+        font-family: "Lato";
+        font-size: 1.5rem;
+        text-align: right; }
+    .blank-2 .grid .box-green {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .blank-2 .grid .box-green p {
+        font-family: "Lato";
+        font-size: 2rem; }
+    .blank-2 .grid .blue-room-pic {
+      grid-column: span 2;
+      background-image: url("/pics/blue-room.jpg");
+      background-repeat: no-repeat;
+      background-size: 105% auto;
+      background-position: 50% 35%; }
+    .blank-2 .grid .green-room-pic {
+      grid-column: span 2;
+      background-image: url("/pics/green-room.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: 0% 20%; }
+
+.table-parallax {
+  height: 440px;
+  width: auto;
+  margin: auto;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.205) 10%, rgba(0, 0, 0, 0.267) 100%), url("/pics/table.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 80%;
+  background-size: 100% auto; }
+
+.blank-3 {
+  background-color: #222831;
+  height: 400px; }
+  .blank-3 div p {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-family: "Lato"; }
