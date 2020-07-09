@@ -19,7 +19,7 @@
                     <div class="navbar-nav">
                         <a class="nav-item nav-link active navbar-link-style" href="#">Rooms<span class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link navbar-link-style" href="services.html">Services</a>
-                        <a class="nav-item nav-link navbar-link-style" href="contact-us.html">Contact us</a>
+                        <a class="nav-item nav-link navbar-link-style" href="#">Contact us</a>
                         <a class="nav-item nav-link navbar-link-style" href="#">book a room</a>
                         <a class="nav-item nav-link navbar-link-style" href="index.html">home</a>
 <!--
@@ -30,29 +30,23 @@
             </nav>
         </div>
     </div>
-    <section class="welcome">
-        <h4>welcome to</h4>
-        <hr class="hr">
-        <h1>your friends from afar</h1>
-    </section>
-    <div class="blank-2">
-        <div class="grid">
-            <div class="box-blue text-center">
-                <p>Our blue room with an ensuite bathroom featuring 70+ year old tiles in it has that little extra comfort you want.</p>
-            </div>
-            <div class="box blue-room-pic"></div>
-            <div class="box green-room-pic"></div>
-            <div class="box-green">
-                <p>Our Green Room has plenty of space to work or relax in, with a brightly lit and friendly atmosphere. </p>
-            </div>
-        </div>
-    </div>
-    <div class="table-bg"></div>
-    <section class="blank-3">
+    <section class="contact-us-bg">
         <div class="container">
-            <p class="text-center">Welcome to one of the most <strong>immersive</strong> travel experiences you´ve ever had. Stay with  us and enjoy exploring, eating and shopping like a <strong>local</strong> in a place where <strong>everything is within  walking distance.</strong>
-            <p class="text-center">We provide the friendliest travel-agent service for free just by booking our rooms. Book now and     let us start putting your Mendoza-experience together, we´re the friends you didn't know you had...</p>
-            <p class="text-center">...and all of this, in the heart of our world-famous wine country.</p>
+            <form action="#" method="GET">
+                <div>
+                    <label for="name">Name:</label>
+                    <input class="form-control small-text-area-max-width" required id="name" type="text" name="name" placeholder="John Doe">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input class="form-control small-text-area-max-width" required id="email" type="email" name="email" placeholder="john@doe.com">
+                </div>
+                <div>
+                    <label for="message">Inquiry:</label>
+                    <textarea class="form-control text-area-max-width" required name="message" id="message" cols="20" rows="10" placeholder="How can we help you?"></textarea>
+                </div>
+                <button class="btn btn-success" type="submit">Send</button> <!--lo va a enviar a la direccion que tengo en action="#"-->
+            </form>
         </div>
     </section>
 

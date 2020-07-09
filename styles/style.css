@@ -48,7 +48,7 @@ body {
     font-weight: 400; }
 
 .blank-2 {
-  background-color: #30475e;
+  background-color: #243342;
   height: auto;
   width: auto;
   padding: 70px 0px 70px 0px; }
@@ -92,7 +92,7 @@ body {
       background-size: 100% auto;
       background-position: 0% 20%; }
 
-.table-parallax {
+.table-bg {
   height: 440px;
   width: auto;
   margin: auto;
@@ -100,6 +100,30 @@ body {
   background-repeat: no-repeat;
   background-position: 0% 80%;
   background-size: 100% auto; }
+
+.contact-us-bg {
+  height: 600px;
+  width: auto;
+  margin: auto;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.205) 10%, rgba(0, 0, 0, 0.267) 100%), url("/pics/table.jpg");
+  background-position: 40% 115%;
+  background-repeat: no-repeat;
+  background-size: auto 150%; }
+
+form .small-text-area-max-width {
+  max-width: 280px;
+  background-color: rgba(255, 255, 255, 0.7); }
+
+form .text-area-max-width {
+  max-width: 550px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: "Lato";
+  font-size: 1.1rem; }
+
+form label {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 3px; }
 
 .blank-3 {
   background-color: #222831;
@@ -109,14 +133,66 @@ body {
     color: whitesmoke;
     font-family: "Lato"; }
 
-.services {
-  padding-top: 50px;
-  max-width: 1000px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 250px);
-  grid-template-rows: 50px 35px auto 50px 35px auto;
-  grid-gap: 10px; }
+.services-wrapper {
+  background-color: #f5f5f5; }
+  .services-wrapper .services {
+    padding-top: 50px;
+    max-width: 1100px;
+    background-color: #f5f5f5;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: 50px 35px auto 50px 35px auto;
+    grid-column-gap: 40px; }
+    .services-wrapper .services h4 {
+      font-size: 1.1rem;
+      font-family: "Lato";
+      font-weight: 400;
+      letter-spacing: 2px; }
+    .services-wrapper .services p {
+      font-family: "Lato";
+      padding-top: 10px; }
 
-.icon, .service-name, .service-description {
-  background-color: gray; }
+.activities-wrapper {
+  padding-top: 30px;
+  background-color: #26384a;
+  color: whitesmoke; }
+  .activities-wrapper h4 {
+    font-size: 1.5rem;
+    font-family: "Lato";
+    font-weight: 500; }
+  .activities-wrapper p {
+    font-family: "Lato"; }
+
+.service-name, .service-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  .service-name p, .service-description p {
+    text-align: center; }
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .icon .walking-icon {
+    animation-name: walking-effect;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-delay: 0s; }
+  .icon .icon-resize {
+    width: 43px;
+    height: auto; }
+
+@keyframes walking-effect {
+  15% {
+    transform: skewY(-7deg); }
+  35% {
+    transform: translateY(-7px); }
+  60% {
+    transform: skewY(7deg); }
+  90% {
+    transform: translateY(-7); } }
