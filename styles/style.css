@@ -5,6 +5,16 @@ body {
   background-color: #222831;
   height: 150px;
   width: auto; }
+  .blank .blank-height-for-flex {
+    height: 150px; }
+
+.navbar-link-style {
+  font-family: "Lato";
+  font-size: 1rem;
+  color: whitesmoke !important;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin-left: 10px; }
 
 .welcome {
   height: 450px;
@@ -58,15 +68,17 @@ body {
       .blank-2 .grid .box-blue p {
         font-family: "Lato";
         font-size: 1.5rem;
-        text-align: right; }
+        text-align: justify; }
     .blank-2 .grid .box-green {
       color: #fff;
       display: flex;
-      align-items: center;
-      justify-content: center; }
+      flex-direction: column;
+      justify-content: start;
+      align-items: center; }
       .blank-2 .grid .box-green p {
         font-family: "Lato";
-        font-size: 2rem; }
+        font-size: 1.5rem;
+        text-align: justify; }
     .blank-2 .grid .blue-room-pic {
       grid-column: span 2;
       background-image: url("/pics/blue-room.jpg");
@@ -96,3 +108,15 @@ body {
     font-size: 1.5rem;
     color: whitesmoke;
     font-family: "Lato"; }
+
+.services {
+  padding-top: 50px;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: 50px 35px auto 50px 35px auto;
+  grid-gap: 10px; }
+
+.icon, .service-name, .service-description {
+  background-color: gray; }
