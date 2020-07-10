@@ -1,5 +1,6 @@
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: "Lato"; }
 
 .blank {
   background-color: #222831;
@@ -97,6 +98,27 @@ body {
   .blank-2 .carousel-img {
     height: auto;
     width: 100%; }
+
+.airbnb-card-wrapper {
+  background-color: #26384a; }
+  .airbnb-card-wrapper .airbnb-besares-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  .airbnb-card-wrapper .more-rooms-btn {
+    margin: 5px 0px 0px 15px; }
+  .airbnb-card-wrapper p {
+    margin-top: 20px;
+    color: whitesmoke; }
+  .airbnb-card-wrapper .collapse .airbnb-newbery-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  .airbnb-card-wrapper .collapse p {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    width: 300px;
+    text-align: justify; }
 
 .table-bg {
   height: 440px;
