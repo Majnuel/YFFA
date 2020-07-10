@@ -91,6 +91,12 @@ body {
       background-repeat: no-repeat;
       background-size: 100% auto;
       background-position: 0% 20%; }
+  .blank-2 .carousel-size {
+    height: auto;
+    width: 700px; }
+  .blank-2 .carousel-img {
+    height: auto;
+    width: 100%; }
 
 .table-bg {
   height: 440px;
@@ -196,3 +202,30 @@ form label {
     transform: skewY(7deg); }
   90% {
     transform: translateY(-7); } }
+
+.room-card {
+  background-color: whitesmoke;
+  height: 480px;
+  padding-left: 0px;
+  display: grid;
+  grid-template-columns: 700px 350px 90px; }
+  .room-card .dash {
+    margin: 20px 0px 0px 0px;
+    width: 5px;
+    height: 50px;
+    background-color: grey; }
+  .room-card .circle {
+    margin: 10px 0px 10px 0px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray; }
+  .room-card h4 {
+    width: 150px;
+    transform: rotate(90deg);
+    margin-top: 70px; }
+  .room-card .side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
