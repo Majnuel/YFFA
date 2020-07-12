@@ -10,25 +10,29 @@
 </head>
 <body>
     <div class="blank">
-        <div class="d-flex justify-content-end align-items-end blank-height-for-flex">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active navbar-link-style" href="rooms.html">Rooms<span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link navbar-link-style" href="services.html">Services</a>
-                        <a class="nav-item nav-link navbar-link-style" href="contact-us.html">Contact us</a>
-                        <a class="nav-item nav-link navbar-link-style" href="book.html">book a room</a>
-                        <a class="nav-item nav-link navbar-link-style" href="index.html">home</a>
-<!--
-                    USE FOR DISABLED LINKS, INCLUDES ARIA DISALED!! :
-                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a> -->
+
+        <div class="header-flex">
+            <div class="d-flex justify-content-end align-items-end blank-height-for-flex">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active navbar-link-style" href="rooms.html">Rooms</a>
+                            <a class="nav-item nav-link navbar-link-style" href="services.html">Services</a>
+                            <a class="nav-item nav-link navbar-link-style" href="contact-us.html">Contact us</a>
+                            <a class="nav-item nav-link navbar-link-style" href="book.html">book a room<span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link navbar-link-style" href="index.html">home</a>
+    <!--
+                        USE FOR DISABLED LINKS, INCLUDES ARIA DISALED!! :
+                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a> -->
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
+
     </div>
     <section class="welcome">
         <h4>welcome to</h4>
@@ -38,23 +42,48 @@
     <div class="blank-2">
         <div class="grid">
             <div class="box-blue text-center">
-                <p>texto hablando de la casa, ubicacion, cosas que podes hacer etc.</p>
+                <p class="text-justify">Welcome to one of the most <strong>immersive</strong> travel experiences you´ve ever had. Stay with  us and enjoy exploring, eating and shopping like a <strong>local</strong> in a place where <strong>everything is within  walking distance: wineries, restaurants, bike rentals, etc...</strong></p>
             </div>
             <div class="box blue-room-pic"></div>
             <div class="box green-room-pic"></div>
             <div class="box-green">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consequatur quos illo iure. Nisi illum ex impedit at commodi dolores.</p>
+                <p class="text-justify">We provide the friendliest travel-agent service for free just by booking our rooms. Book now and     let us start putting your Mendoza-experience together, we´re the friends you didn't know you had...</p>
+                <p class="text-justify">...and all of this, in the heart of our world-famous wine country.</p>
             </div>
         </div>
     </div>
     <div class="table-bg"></div>
     <section class="blank-3">
-        <div class="container">
-            <p class="text-center">Welcome to one of the most <strong>immersive</strong> travel experiences you´ve ever had. Stay with  us and enjoy exploring, eating and shopping like a <strong>local</strong> in a place where <strong>everything is within  walking distance.</strong>
-            <p class="text-center">We provide the friendliest travel-agent service for free just by booking our rooms. Book now and     let us start putting your Mendoza-experience together, we´re the friends you didn't know you had...</p>
-            <p class="text-center">...and all of this, in the heart of our world-famous wine country.</p>
+        <div class="container d-flex flex-row justify-content-around">
+            <div class="mendoza text-center text-justify">
+                <h2>Mendoza done the right way!</h2>
+                <p>Located in the exquisite district of Chacras de Coria our house is in the perfect spot for visiting wineries, the mountains and the city while staying in the most picturesque town in state.</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13387.468498236798!2d-68.88565547194979!3d-32.980907294572425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0af3dc0e8f1f%3A0x6b647646861df9cf!2sChacras%20de%20Coria%2C%20Mendoza%20Province!5e0!3m2!1sen!2sar!4v1594494232375!5m2!1sen!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </section>
+
+    <footer>
+
+        <div class="collapse" id="collapse-test">
+            <div class="about-us">
+                <p class="text-center">We are Emmanuel and Rebekka, two travel addicts who love to host whenever we are not abroad doing our thing. We are proud of the fact that absolutely everyone is welcome in our house and we know the value of having some local tell you what not to miss, how to avoid tourist-traps, and places you´ll only get to know if you have some local intel. Our mission is to make your stay in Mendoza an unforgettable one. <br>
+                    Our house is perfect for tourists, business travellers, backpackers, digital nomads, etc <br>
+                    Travel bloggers, influencers and musicians: contact us for free stays<br>
+            </div>
+        </div>
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="book.html">book now</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#collapse-test">about us</a>
+            </li>
+          </ul>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

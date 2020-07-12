@@ -2,12 +2,33 @@ body {
   margin: 0;
   font-family: "Lato"; }
 
-.blank {
+.blank .header-flex {
+  display: flex;
+  flex-direction: row;
   background-color: #222831;
   height: 150px;
   width: auto; }
-  .blank .blank-height-for-flex {
-    height: 150px; }
+  .blank .header-flex .blank-height-for-flex {
+    height: 150px;
+    width: 100%; }
+  .blank .header-flex .breadcrumb {
+    width: 100%;
+    background-color: #222831;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0px 0px 0px 0px; }
+    .blank .header-flex .breadcrumb li {
+      color: whitesmoke;
+      font-family: "Lato";
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: lowercase;
+      line-height: 1.5; }
+      .blank .header-flex .breadcrumb li a {
+        color: whitesmoke;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 1.5;
+        font-weight: 900; }
 
 .navbar-link-style {
   font-family: "Lato";
@@ -49,7 +70,7 @@ body {
     font-weight: 400; }
 
 .blank-2 {
-  background-color: #243342;
+  background-color: #364d63;
   height: auto;
   width: auto;
   padding: 70px 0px 70px 0px; }
@@ -59,39 +80,45 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 350px);
     grid-auto-rows: 350px;
-    grid-row-gap: 20px;
-    grid-column-gap: 10px; }
+    grid-row-gap: 50px;
+    grid-column-gap: 20px; }
     .blank-2 .grid .box-blue {
+      background-color: #32475d;
+      padding: 10px;
       color: #fff;
       display: flex;
       flex-direction: column;
-      align-items: flex-start; }
+      align-items: flex-start;
+      clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 100%, 40px 100%, 0 calc(100% - 40px)); }
       .blank-2 .grid .box-blue p {
         font-family: "Lato";
-        font-size: 1.5rem;
-        text-align: justify; }
+        font-size: 1.2rem; }
     .blank-2 .grid .box-green {
+      background-color: #2d4053;
+      padding: 10px;
       color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: start;
-      align-items: center; }
+      align-items: center;
+      clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0% 100%, 0 100%); }
       .blank-2 .grid .box-green p {
         font-family: "Lato";
-        font-size: 1.5rem;
-        text-align: justify; }
+        font-size: 1.2rem; }
     .blank-2 .grid .blue-room-pic {
       grid-column: span 2;
       background-image: url("/pics/blue-room.jpg");
       background-repeat: no-repeat;
       background-size: 105% auto;
-      background-position: 50% 35%; }
+      background-position: 50% 35%;
+      box-shadow: 14px 19px 30px 2px rgba(0, 0, 0, 0.6); }
     .blank-2 .grid .green-room-pic {
       grid-column: span 2;
       background-image: url("/pics/green-room.jpg");
       background-repeat: no-repeat;
       background-size: 100% auto;
-      background-position: 0% 20%; }
+      background-position: 0% 20%;
+      box-shadow: -10px 19px 30px 2px rgba(0, 0, 0, 0.6); }
   .blank-2 .carousel-size {
     height: auto;
     width: 700px; }
@@ -100,24 +127,23 @@ body {
     width: 100%; }
 
 .airbnb-card-wrapper {
-  background-color: #26384a; }
-  .airbnb-card-wrapper .airbnb-besares-card-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
+  background-color: #26384a;
+  padding-bottom: 30px; }
   .airbnb-card-wrapper .more-rooms-btn {
-    margin: 5px 0px 0px 15px; }
+    margin: 15px 0px 40px 0px;
+    text-transform: lowercase;
+    font-weight: 700; }
   .airbnb-card-wrapper p {
     margin-top: 20px;
     color: whitesmoke; }
   .airbnb-card-wrapper .collapse .airbnb-newbery-card-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    padding-bottom: 25px; }
   .airbnb-card-wrapper .collapse p {
     font-size: 1.2rem;
     color: whitesmoke;
-    width: 300px;
     text-align: justify; }
 
 .table-bg {
@@ -130,6 +156,7 @@ body {
   background-size: 100% auto; }
 
 .contact-us-bg {
+  padding-top: 20px;
   height: 600px;
   width: auto;
   margin: auto;
@@ -137,6 +164,9 @@ body {
   background-position: 40% 115%;
   background-repeat: no-repeat;
   background-size: auto 150%; }
+
+form .btn {
+  margin-left: 100px; }
 
 form .small-text-area-max-width {
   max-width: 280px;
@@ -155,16 +185,23 @@ form label {
 
 .blank-3 {
   background-color: #222831;
-  height: 400px; }
+  padding: 30px 15px 30px 15px; }
+  .blank-3 .mendoza {
+    width: 500px; }
+  .blank-3 h2 {
+    color: whitesmoke; }
   .blank-3 div p {
     font-size: 1.5rem;
     color: whitesmoke;
     font-family: "Lato"; }
 
 .services-wrapper {
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  padding-bottom: 25px; }
+  .services-wrapper h2 {
+    padding-top: 30px; }
   .services-wrapper .services {
-    padding-top: 50px;
+    padding-top: 40px;
     max-width: 1100px;
     background-color: #f5f5f5;
     margin: auto;
@@ -181,16 +218,26 @@ form label {
       font-family: "Lato";
       padding-top: 10px; }
 
+.divider {
+  height: 5px;
+  background-color: #222831; }
+
 .activities-wrapper {
   padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #26384a;
   color: whitesmoke; }
+  .activities-wrapper h2 {
+    margin-top: 15px; }
   .activities-wrapper h4 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: "Lato";
-    font-weight: 500; }
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: 15px; }
   .activities-wrapper p {
-    font-family: "Lato"; }
+    font-family: "Lato";
+    margin: 15px; }
 
 .service-name, .service-description {
   display: flex;
@@ -286,12 +333,18 @@ form label {
   width: auto;
   position: relative; }
   .btn-book-now::after {
-    content: "\f054";
+    display: inline-block;
+    width: auto;
+    height: 70px;
+    margin-right: 15px;
+    content: "";
+    background: url("/icons/airbnb.svg") no-repeat 0 0;
+    background-size: 100%;
     font-family: "Lato";
     font-weight: 400;
     position: absolute;
-    left: 85%;
-    top: 31%;
+    left: 70%;
+    top: 35%;
     right: 5%;
     bottom: 0;
     opacity: 0; }
@@ -304,3 +357,15 @@ form label {
     .btn-book-now:hover::after {
       opacity: 1;
       transition: all 0.5s; }
+
+footer .nav {
+  background-color: #5e6f64; }
+  footer .nav a {
+    color: whitesmoke; }
+
+footer .about-us {
+  background-color: #222831;
+  padding: 20px 0px 20px 0px;
+  text-align: justify;
+  text-align: center;
+  color: whitesmoke; }

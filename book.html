@@ -10,30 +10,45 @@
 </head>
 <body>
     <div class="blank">
-        <div class="d-flex justify-content-end align-items-end blank-height-for-flex">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active navbar-link-style" href="rooms.html">Rooms<span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link navbar-link-style" href="services.html">Services</a>
-                        <a class="nav-item nav-link navbar-link-style" href="contact-us.html">Contact us</a>
-                        <a class="nav-item nav-link navbar-link-style" href="#">book a room</a>
-                        <a class="nav-item nav-link navbar-link-style" href="index.html">home</a>
-<!--
-                    USE FOR DISABLED LINKS, INCLUDES ARIA DISALED!! :
-                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a> -->
+
+        <div class="header-flex">
+
+            <div class="breadcrumb d-flex justify-content-start align-items-end">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Your friends from afar</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">booking</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="d-flex justify-content-end align-items-end blank-height-for-flex">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active navbar-link-style" href="rooms.html">Rooms</a>
+                            <a class="nav-item nav-link navbar-link-style" href="services.html">Services</a>
+                            <a class="nav-item nav-link navbar-link-style" href="contact-us.html">Contact us</a>
+                            <a class="nav-item nav-link navbar-link-style" href="book.html">book a room<span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link navbar-link-style" href="index.html">home</a>
+    <!--
+                        USE FOR DISABLED LINKS, INCLUDES ARIA DISALED!! :
+                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a> -->
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
+
     </div>
 
         <div class="airbnb-card-wrapper">
 
-            <div class="airbnb-besares-card-wrapper">
+            <div class="d-flex flex-row justify-content-around">
+            <!-- <div class="airbnb-besares-card-wrapper"> -->
 
                 <div class="airbnb-embed-frame" data-id="29704467" data-view="home" data-hide-price="true"style="width:450px;height:300px"><a href="https://www.airbnb.com/rooms/29704467?s=66&amp;unique_share_id=2f07fcf9-b92a-4498-b3b3-86ef1e630934&amp;source=embed_widget">View On Airbnb</a><a href="https://www.airbnb.com/rooms/29704467?s=66&amp;unique_share_id=2f07fcf9-b92a-4498-b3b3-86ef1e630934&amp;source=embed_widget" rel="nofollow">Your friends from afar</a><script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script></div>
 
@@ -41,18 +56,18 @@
 
             </div>
 
-            <p class="text-center">For your safety, peace of mind and comfort we route all our bookings through Airbnb. If you have any questions reach out by filling out the <a href="contact-us.html">contact us</a> form</p>
+            <p class="container text-center">For your safety, peace of mind and comfort we route all our bookings through Airbnb. If you have any questions reach out by filling out the <a href="contact-us.html">contact us</a> form</p>
 
-            <a class="more-rooms-btn" data-toggle="collapse" href="#newbery-cards-collapse" role="button" aria-expanded="false" aria-controls="collapse-extra-rooms">
-                More rooms >
-              </a>
+            <div class="container text-center">
+                <p>Are we booked out? Don't worry, we have<a class="more-rooms-btn" data-toggle="collapse" href="#newbery-cards-collapse" role="button" aria-expanded="false" aria-controls="collapse-extra-rooms"> More rooms</a> available.</p>
 
+            </div>
             <div class="collapse" id="newbery-cards-collapse">
+                <div class="container">
+                    <p class="text-center">Private rooms with private bathroom in a one-of-a-kind house just a 10' walk from Your friends from Afar. Located only one block away from our town's square. Also run by us</p>
+                </div>
                 <div class="airbnb-newbery-card-wrapper">
 
-                    <div>
-                        <p>Private rooms with private bathrooms in a beautiful house just a 10' walk from Your friends from Afar. Located only one block away from our town's square.</p>
-                    </div>
 
                     <div class="airbnb-embed-frame" data-id="8565085" data-view="home" data-hide-price="true"   style="width:450px;height:300px"><a href="https://www.airbnb.com/rooms/8565085?s=66&amp;  unique_share_id=2d6330ba-d7a3-41f4-ae2b-ebc1a3c461ce&amp;source=embed_widget">View On     Airbnb</a><a href="https://www.airbnb.com/rooms/8565085?s=66&amp;   unique_share_id=2d6330ba-d7a3-41f4-ae2b-ebc1a3c461ce&amp;source=embed_widget"  rel="nofollow">Cute Room in one-of-a-kind House</a><script async="" src="https://www.    airbnb.com/embeddable/airbnb_jssdk"></script>
                     </div>
@@ -68,9 +83,37 @@
         </div>
 
     </div>
-    <div class="table-bg"></div>
+    <!-- <div class="table-bg"></div>
     <section class="blank-3">
-    </section>
+    </section> -->
+
+    <footer>
+
+        <div class="collapse" id="collapse-test">
+            <div class="about-us">
+                <p class="text-center">We are Emmanuel and Rebekka, two travel addicts who love to host whenever we are not abroad doing our thing. We are proud of the fact that absolutely everyone is welcome in our house and we know the value of having some local tell you what not to miss, how to avoid tourist-traps, and places you´ll only get to know if you have some local intel. Our mission is to make your stay in Mendoza an unforgettable one. <br>
+                    Our house is perfect for tourists, business travellers, backpackers, digital nomads, etc <br>
+                    Travel bloggers, influencers and musicians: contact us for free stays<br>
+            </div>
+        </div>
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book.html">book now</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#collapse-test">about us</a>
+            </li>
+          </ul>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

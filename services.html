@@ -10,27 +10,42 @@
 </head>
 <body>
     <div class="blank">
-        <div class="d-flex justify-content-end align-items-end blank-height-for-flex">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active navbar-link-style" href="#">Rooms<span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link navbar-link-style" href="#">Services</a>
-                        <a class="nav-item nav-link navbar-link-style" href="contact-us.html">Contact us</a>
-                        <a class="nav-item nav-link navbar-link-style" href="#">book a room</a>
-                        <a class="nav-item nav-link navbar-link-style" href="index.html">home</a>
-<!--
-                    USE FOR DISABLED LINKS, INCLUDES ARIA DISALED!! :
-                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a> -->
+
+        <div class="header-flex">
+
+            <div class="breadcrumb d-flex justify-content-start align-items-end">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Your friends from afar</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">services</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="d-flex justify-content-end align-items-end blank-height-for-flex">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active navbar-link-style" href="rooms.html">Rooms</a>
+                            <a class="nav-item nav-link navbar-link-style" href="services.html">Services</a>
+                            <a class="nav-item nav-link navbar-link-style" href="contact-us.html">Contact us</a>
+                            <a class="nav-item nav-link navbar-link-style" href="book.html">book a room<span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link navbar-link-style" href="index.html">home</a>
+    <!--
+                        USE FOR DISABLED LINKS, INCLUDES ARIA DISALED!! :
+                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a> -->
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
+
     </div>
     <div class="services-wrapper">
+        <h2 class="container text-center">services</h2>
         <section class="services">
             <div class="icon">
                 <img src="/icons/breakfast-icon.png" alt="">
@@ -107,8 +122,9 @@
             </div>
         </section>
     </div>
-
+    <div class="divider"></div>
     <div class="activities-wrapper">
+        <h2 class="container text-center">see & do</h2>
         <div class="container activities-wrapper">
             <div class="row">
                 <div class="col-md-3 col-sm-4 col-6 text-center">
@@ -148,6 +164,33 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="collapse" id="collapse-test">
+            <div class="about-us">
+                <p class="text-center">We are Emmanuel and Rebekka, two travel addicts who love to host whenever we are not abroad doing our thing. We are proud of the fact that absolutely everyone is welcome in our house and we know the value of having some local tell you what not to miss, how to avoid tourist-traps, and places you´ll only get to know if you have some local intel. Our mission is to make your stay in Mendoza an unforgettable one. <br>
+                    Our house is perfect for tourists, business travellers, backpackers, digital nomads, etc <br>
+                    Travel bloggers, influencers and musicians: contact us for free stays<br>
+            </div>
+        </div>
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book.html">book now</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#collapse-test">about us</a>
+            </li>
+          </ul>
+    </footer>
 
 
 
