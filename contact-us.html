@@ -47,22 +47,20 @@
     <section class="contact-us-bg">
         <div class="container">
             <form action="#" method="GET">
-
-                <div>
+                <div class="d-flex flex-row mb-3">
                     <label for="name">Name:</label>
-                    <div class="d-flex">
-                        <input class="form-control small-text-area-max-width" required id="name" type="text" name="name" placeholder="John Doe">
-                        <button class="btn btn-success" type="submit">Send</button> <!--lo va a enviar a la direccion que tengo en action="#"-->
-                    </div>
+                    <input class="form-control small-text-area-max-width" required id="name" type="text" name="name" placeholder="John Doe">
                 </div>
-                <div>
+                <div class="d-flex flex-row mb-3">
                     <label for="email">Email:</label>
                     <input class="form-control small-text-area-max-width" required id="email" type="email" name="email" placeholder="john@doe.com">
                 </div>
-
-                <div>
+                <div class="mb-3">
                     <label for="message">Inquiry:</label>
                     <textarea class="form-control text-area-max-width" required name="message" id="message" cols="20" rows="10" placeholder="How can we help you?"></textarea>
+                </div>
+                <div class="d-flex flex-row justify-content-center w-550">
+                    <button class="btn btn-success" type="submit">Send</button> <!--lo va a enviar a la direccion que tengo en action="#"-->
                 </div>
 
             </form>

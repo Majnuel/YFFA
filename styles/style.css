@@ -83,23 +83,24 @@ body {
     grid-row-gap: 50px;
     grid-column-gap: 20px; }
     .blank-2 .grid .box-blue {
-      background-color: #32475d;
-      padding: 10px;
+      background-color: #2d4053;
+      padding: 25px 30px 25px 35px;
       color: #fff;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
       clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 100%, 40px 100%, 0 calc(100% - 40px)); }
       .blank-2 .grid .box-blue p {
         font-family: "Lato";
         font-size: 1.2rem; }
     .blank-2 .grid .box-green {
       background-color: #2d4053;
-      padding: 10px;
+      padding: 25px 30px 25px 35px;
       color: #fff;
       display: flex;
       flex-direction: column;
-      justify-content: start;
+      justify-content: center;
       align-items: center;
       clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0% 100%, 0 100%); }
       .blank-2 .grid .box-green p {
@@ -111,14 +112,14 @@ body {
       background-repeat: no-repeat;
       background-size: 105% auto;
       background-position: 50% 35%;
-      box-shadow: 14px 19px 30px 2px rgba(0, 0, 0, 0.6); }
+      box-shadow: 20px 5px 40px 10px rgba(0, 0, 0, 0.6); }
     .blank-2 .grid .green-room-pic {
       grid-column: span 2;
       background-image: url("/pics/green-room.jpg");
       background-repeat: no-repeat;
       background-size: 100% auto;
       background-position: 0% 20%;
-      box-shadow: -10px 19px 30px 2px rgba(0, 0, 0, 0.6); }
+      box-shadow: -20px 5px 40px 10px rgba(0, 0, 0, 0.6); }
   .blank-2 .carousel-size {
     height: auto;
     width: 700px; }
@@ -155,41 +156,55 @@ body {
   background-position: 0% 80%;
   background-size: 100% auto; }
 
-.contact-us-bg {
-  padding-top: 20px;
+.galeria-bg {
   height: 600px;
   width: auto;
   margin: auto;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.205) 10%, rgba(0, 0, 0, 0.267) 100%), url("/pics/table.jpg");
-  background-position: 40% 115%;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.5) 100%), url("/pics/galeria.jpg");
   background-repeat: no-repeat;
-  background-size: auto 150%; }
+  background-position: 30% 50%;
+  background-size: 110% auto; }
 
-form .btn {
-  margin-left: 100px; }
+.contact-us-bg {
+  padding-top: 20px;
+  height: 550px;
+  width: auto;
+  margin: auto;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.205) 10%, rgba(0, 0, 0, 0.267) 100%), url("/pics/table.jpg");
+  background-position: 40% 100%;
+  background-repeat: no-repeat;
+  background-size: auto 170%; }
 
-form .small-text-area-max-width {
-  max-width: 280px;
-  background-color: rgba(255, 255, 255, 0.7); }
-
-form .text-area-max-width {
-  max-width: 550px;
-  background-color: rgba(255, 255, 255, 0.7);
-  font-family: "Lato";
-  font-size: 1.1rem; }
-
-form label {
-  font-size: 1.3rem;
-  font-weight: 700;
-  letter-spacing: 3px; }
+form {
+  width: 550px; }
+  form .small-text-area-max-width {
+    max-width: 280px;
+    background-color: rgba(255, 255, 255, 0.5); }
+  form .text-area-max-width {
+    max-width: 550px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: "Lato";
+    font-size: 1.1rem; }
+  form label {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 3px; }
+  form .btn {
+    width: 200px;
+    letter-spacing: 4px;
+    font-family: "Lato";
+    font-size: 1.2rem; }
 
 .blank-3 {
   background-color: #222831;
   padding: 30px 15px 30px 15px; }
   .blank-3 .mendoza {
-    width: 500px; }
+    width: 400px; }
   .blank-3 h2 {
-    color: whitesmoke; }
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: whitesmoke;
+    margin-bottom: 30px; }
   .blank-3 div p {
     font-size: 1.5rem;
     color: whitesmoke;
@@ -310,7 +325,10 @@ form label {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: center;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
   .room-card .room-description p {
     margin: 20px 10px 20px 20px;
     text-align: justify;
