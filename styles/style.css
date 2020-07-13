@@ -73,7 +73,7 @@ body {
   background-color: #364d63;
   height: auto;
   width: auto;
-  padding: 70px 0px 70px 0px; }
+  padding: 70px 0px 20px 0px; }
   .blank-2 .grid {
     max-width: 1100px;
     margin: auto;
@@ -81,7 +81,8 @@ body {
     grid-template-columns: repeat(3, 350px);
     grid-auto-rows: 350px;
     grid-row-gap: 50px;
-    grid-column-gap: 20px; }
+    grid-column-gap: 20px;
+    padding-bottom: 60px; }
     .blank-2 .grid .box-blue {
       background-color: #2d4053;
       padding: 25px 30px 25px 35px;
@@ -164,6 +165,99 @@ body {
   background-repeat: no-repeat;
   background-position: 30% 50%;
   background-size: 110% auto; }
+  .galeria-bg .modal-btn {
+    background-color: rgba(54, 77, 99, 0);
+    border: none; }
+  .galeria-bg .x-fade-1 {
+    margin: 10px;
+    height: 550px;
+    width: 300px;
+    overflow: hidden; }
+    .galeria-bg .x-fade-1 .garden {
+      height: 550px;
+      width: auto;
+      position: relative;
+      right: 50px; }
+    .galeria-bg .x-fade-1 .hammock {
+      height: 550px;
+      width: auto;
+      position: relative;
+      right: 150px; }
+    .galeria-bg .x-fade-1 .tv {
+      height: 550px;
+      width: auto;
+      position: relative;
+      right: 250px; }
+  .galeria-bg .x-fade-2 {
+    margin: 10px;
+    height: 550px;
+    width: 300px;
+    overflow: hidden; }
+    .galeria-bg .x-fade-2 .galeria {
+      height: 550px;
+      width: auto;
+      position: relative;
+      right: 200px; }
+    .galeria-bg .x-fade-2 .kitchen {
+      height: 550px;
+      width: auto;
+      position: relative;
+      right: 200px; }
+    .galeria-bg .x-fade-2 .record-player {
+      height: 550px;
+      width: auto;
+      position: relative;
+      right: 200px; }
+  .galeria-bg .x-fade-3 {
+    margin: 10px;
+    height: 550px;
+    width: 300px;
+    overflow: hidden; }
+    .galeria-bg .x-fade-3 .living-room {
+      height: 550px;
+      width: auto;
+      position: relative;
+      right: 170px; }
+    .galeria-bg .x-fade-3 .living-room-2 {
+      height: 550px;
+      width: auto;
+      position: relative;
+      right: 300px; }
+    .galeria-bg .x-fade-3 .living-room-3 {
+      height: 550px;
+      width: auto;
+      position: relative;
+      right: 300px; }
+
+#backgroundchange div:nth-of-type(1) {
+  animation-delay: 8s;
+  -webkit-animation-delay: 8s; }
+
+#backgroundchange div:nth-of-type(2) {
+  animation-delay: 6s;
+  -webkit-animation-delay: 6s; }
+
+#backgroundchange div:nth-of-type(3) {
+  animation-delay: 4s;
+  -webkit-animation-delay: 4s; }
+
+#backgroundchange div:nth-of-type(4) {
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s; }
+
+#backgroundchange div:nth-of-type(5) {
+  animation-delay: 0;
+  -webkit-animation-delay: 0; }
+
+#backgroundchange div {
+  animation-name: backgroundchangeFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  -webkit-animation-name: backgroundchangeFadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s; }
 
 .contact-us-bg {
   padding-top: 20px;
