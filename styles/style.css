@@ -195,9 +195,10 @@ body {
   padding-top: 30px; }
   .mobile-rooms-index .box-blue {
     min-width: 350px;
-    max-width: 600px;
+    max-width: 90vw;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     background-color: #2d4053;
     padding: 25px 30px 25px 30px;
     color: #fff;
@@ -210,9 +211,10 @@ body {
       font-size: 1.2rem; }
   .mobile-rooms-index .box-green {
     min-width: 350px;
-    max-width: 600px;
+    max-width: 90vw;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     background-color: #2d4053;
     padding: 25px 30px 25px 30px;
     color: #fff;
@@ -281,7 +283,7 @@ body {
 
 @media (max-width: 465px) {
   #newbery-cards-collapse .airbnb-embed-frame {
-    width: auto;
+    max-width: 95vw;
     height: auto;
     margin: auto; } }
 

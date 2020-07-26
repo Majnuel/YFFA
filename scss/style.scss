@@ -266,10 +266,11 @@ body {
         padding-top: 30px;
             .box-blue {
                 min-width: 350px;
-                max-width: 600px;
+                max-width: 90vw;
                 // margin: 0px 20px 0px 20px;
                 margin-left: auto;
                 margin-right: auto;
+                margin-bottom: 20px;
                 background-color:  hsla(210, 30%, 25%, 1);
                 padding: 25px 30px 25px 30px;
                 color: #fff;
@@ -284,9 +285,10 @@ body {
             }
             .box-green {
                 min-width: 350px;
-                max-width: 600px;
+                max-width: 90vw;
                 margin-left: auto;
                 margin-right: auto;
+                margin-bottom: 20px;
                 background-color:  hsla(210, 30%, 25%, 1);
                 padding: 25px 30px 25px 30px;
                 color: #fff;
@@ -370,7 +372,7 @@ body {
 @media (max-width: 465px) {
     #newbery-cards-collapse {
         .airbnb-embed-frame {
-            width: auto;
+            max-width: 95vw;
             height: auto;
             margin:auto;
         }
