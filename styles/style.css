@@ -3,8 +3,12 @@ body {
   font-family: "Lato";
   background-color: #222831; }
 
+.hide-h1 {
+  display: none; }
+
 .navbar-toggler {
-  background-color: #6a8caf; }
+  background-color: #507395;
+  margin: auto 0px auto auto; }
 
 .blank .header-flex {
   display: flex;
@@ -45,6 +49,26 @@ body {
 .mobile-rooms {
   display: none;
   color: whitesmoke; }
+  .mobile-rooms p {
+    text-align: justify; }
+  .mobile-rooms .btn {
+    max-width: 60px;
+    margin-top: 5px;
+    background-color: #0F0F6D;
+    border: none;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2); }
+  .mobile-rooms hr {
+    margin-bottom: 0px; }
+
+.airbnb-and-more {
+  margin-top: 10px;
+  font-size: 0.9rem; }
+
+@media (max-width: 480px) {
+  .mobile-rooms ul {
+    padding-left: 15px;
+    font-size: 0.8rem;
+    line-height: 1.4; } }
 
 .navbar-link-style {
   font-family: "Lato";
@@ -53,7 +77,18 @@ body {
   font-weight: 700;
   text-transform: lowercase;
   margin-left: 10px;
-  padding-top: 0px; }
+  padding-top: 0px;
+  background-color: rgba(33, 39, 48, 0.65) rgba(33, 39, 48, 0.65);
+  text-align: center; }
+
+.navbar-link-style:hover {
+  transition: 150ms;
+  transform: scale(1.1);
+  animation-name: shakeAnim; }
+
+.navbar-nav {
+  background-color: rgba(33, 39, 48, 0.65);
+  border-radius: 3%; }
 
 .welcome {
   height: 450px;
@@ -86,6 +121,12 @@ body {
     text-transform: uppercase;
     font-weight: 400; }
 
+.clip-bottom-left {
+  clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 100%, 40px 100%, 0 calc(100% - 40px)); }
+
+.clip-bottom-right {
+  clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0% 100%, 0 100%); }
+
 .blank-2 {
   background-color: #364d63;
   height: auto;
@@ -107,8 +148,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 100%, 40px 100%, 0 calc(100% - 40px)); }
+      align-items: center; }
       .blank-2 .grid .box-blue p {
         font-family: "Lato";
         font-size: 1.2rem; }
@@ -119,8 +159,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0% 100%, 0 100%); }
+      align-items: center; }
       .blank-2 .grid .box-green p {
         font-family: "Lato";
         font-size: 1.2rem; }
@@ -165,8 +204,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0% 100%, 0 100%); }
+    align-items: center; }
     .mobile-rooms-index .box-blue p {
       font-family: "Lato";
       font-size: 1.2rem; }
@@ -181,8 +219,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0% 100%, 0 100%); }
+    align-items: center; }
     .mobile-rooms-index .box-green p {
       font-family: "Lato";
       font-size: 1.2rem; }
@@ -233,6 +270,20 @@ body {
     font-size: 1rem;
     color: whitesmoke;
     text-align: justify; }
+
+#newbery-cards-collapse {
+  color: whitesmoke;
+  padding-bottom: 10px; }
+  #newbery-cards-collapse .airbnb-embed-frame {
+    width: 450px;
+    height: 300px;
+    margin: auto; }
+
+@media (max-width: 465px) {
+  #newbery-cards-collapse .airbnb-embed-frame {
+    width: auto;
+    height: auto;
+    margin: auto; } }
 
 .table-bg {
   height: 440px;
@@ -315,59 +366,84 @@ body {
       position: relative;
       right: 300px; }
 
-#backgroundchange div:nth-of-type(1) {
-  animation-delay: 8s;
-  -webkit-animation-delay: 8s; }
-
-#backgroundchange div:nth-of-type(2) {
-  animation-delay: 6s;
-  -webkit-animation-delay: 6s; }
-
-#backgroundchange div:nth-of-type(3) {
-  animation-delay: 4s;
-  -webkit-animation-delay: 4s; }
-
-#backgroundchange div:nth-of-type(4) {
-  animation-delay: 2s;
-  -webkit-animation-delay: 2s; }
-
-#backgroundchange div:nth-of-type(5) {
-  animation-delay: 0;
-  -webkit-animation-delay: 0; }
-
-#backgroundchange div {
-  animation-name: backgroundchangeFadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 8s;
-  -webkit-animation-name: backgroundchangeFadeInOut;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 8s; }
-
 .contact-us-bg {
   padding-top: 20px;
   height: 550px;
   width: auto;
   margin: auto;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.205) 10%, rgba(0, 0, 0, 0.267) 100%), url("/pics/table.jpg");
+  background-image: linear-gradient(90deg, rgba(33, 39, 48, 0.8) 30%, rgba(0, 0, 0, 0.2) 60%), url("/pics/table.jpg");
   background-position: 40% 100%;
   background-repeat: no-repeat;
-  background-size: auto 170%; }
+  background-size: auto 170%;
+  color: whitesmoke; }
+
+@media (max-width: 540px) {
+  .contact-us-bg {
+    background-color: #f5f5f5;
+    background-image: none; }
+    .contact-us-bg label {
+      color: black; } }
+
+.button-shake {
+  position: relative;
+  animation-name: shake;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  cursor: pointer; }
+
+.button-shake:hover {
+  animation-name: shakeAnim; }
+
+@keyframes shakeAnim {
+  0% {
+    left: 0; }
+  1% {
+    left: -3px; }
+  2% {
+    left: 5px; }
+  3% {
+    left: -8px; }
+  4% {
+    left: 8px; }
+  5% {
+    left: -5px; }
+  6% {
+    left: 3px; }
+  7% {
+    left: 0; } }
+
+@keyframes shake {
+  0% {
+    left: 0; }
+  1% {
+    left: -3px; }
+  2% {
+    left: 5px; }
+  3% {
+    left: -8px; }
+  4% {
+    left: 8px; }
+  5% {
+    left: -5px; }
+  6% {
+    left: 3px; }
+  7% {
+    left: 0; } }
 
 form {
   max-width: 550px; }
   form .small-text-area-max-width {
     max-width: 280px;
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: rgba(255, 255, 255, 0.7); }
   form .text-area-max-width {
     max-width: 550px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     font-family: "Lato";
     font-size: 1.1rem; }
   form label {
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 3px; }
   form .btn {
     width: 200px;
@@ -379,6 +455,14 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
+
+@media (max-width: 410px) {
+  .book-mobile-left {
+    display: none; } }
+
+@media (min-width: 410px) {
+  .book-mobile-bottom {
+    display: none; } }
 
 @media (max-width: 767px) {
   .map-section {
@@ -392,11 +476,10 @@ form {
   background-color: #222831;
   padding: 30px 15px 30px 15px; }
   .blank-3 .mendoza {
-    width: 400px;
+    max-width: 400px;
     background-color: rgba(45, 64, 83, 0.8);
     padding: 25px 30px 25px 30px;
-    color: #fff;
-    clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 100%, 40px 100%, 0 calc(100% - 40px)); }
+    color: #fff; }
   .blank-3 h2 {
     font-weight: 700;
     font-size: 1.6rem;
@@ -407,6 +490,9 @@ form {
     color: whitesmoke;
     font-family: "Lato"; }
   .blank-3 div iframe {
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
     box-shadow: 20px 5px 40px 10px rgba(0, 0, 0, 0.6); }
 
 .services-wrapper {
@@ -461,6 +547,13 @@ form {
   .service-name p, .service-description p {
     text-align: center; }
 
+.walking-icon {
+  animation-name: walking-effect;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
 .icon {
   display: flex;
   flex-direction: column;
@@ -496,8 +589,7 @@ form {
   padding-left: 0px;
   margin-bottom: 70px;
   display: grid;
-  grid-template-columns: 700px 350px 90px;
-  clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 100% 90%, 95% 100%, 0% 100%, 0 100%); }
+  grid-template-columns: 700px 350px 90px; }
   .room-card .dash {
     margin: 30px 0px 0px 0px;
     width: 3px;
@@ -538,6 +630,11 @@ form {
   .room-card .room-description .btn-wrapper {
     margin-left: 25px; }
 
+.booked-out-style {
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  font-size: 0.9rem; }
+
 .superhost-position {
   height: 730px;
   position: absolute;
@@ -567,7 +664,7 @@ img {
   color: #ffffff;
   cursor: pointer;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   border: 0;
   transition: all 0.5s;
   border-radius: 10px;
@@ -576,7 +673,7 @@ img {
   .btn-book-now::after {
     display: inline-block;
     width: auto;
-    height: 70px;
+    height: 50px;
     margin-right: 15px;
     content: "";
     background: url("/pngs-svgs/airbnb.svg") no-repeat 0 0;
@@ -585,28 +682,33 @@ img {
     font-weight: 400;
     position: absolute;
     left: 70%;
-    top: 35%;
+    top: 28%;
     right: 5%;
     bottom: 0;
     opacity: 0; }
   .btn-book-now:hover {
     background: #2b2bff;
-    transition: all 0.5s;
+    transition: all 0.18s;
     border-radius: 10px;
     box-shadow: 0px 6px 15px #0000ff61;
-    padding: 1.5rem 3.5rem 1.5rem 1.5rem; }
+    padding: 0.7rem 3rem 0.7rem 1.5rem; }
     .btn-book-now:hover::after {
       opacity: 1;
-      transition: all 0.5s; }
+      transition: all 0.2s; }
 
 footer .nav {
   background-color: #5e6f64; }
+  footer .nav .right-border {
+    border-right: solid;
+    border-color: whitesmoke;
+    line-height: 0.4rem;
+    border-width: 1px; }
   footer .nav a {
     color: whitesmoke; }
 
 footer .about-us {
   background-color: #222831;
-  padding: 20px 0px 20px 0px;
+  padding: 10px 0px 20px 0px;
   text-align: justify;
   text-align: center;
   color: whitesmoke; }
@@ -622,6 +724,15 @@ footer .about-us {
     text-transform: lowercase; }
   .responsive-services p {
     font-size: 0.8rem; }
+  .responsive-services .garden-resize {
+    width: 3rem;
+    height: auto; }
+  .responsive-services .walking-icon-resize {
+    height: 0.85rem;
+    width: auto; }
+  .responsive-services .resize {
+    height: 2rem;
+    width: auto; }
 
 @media (max-width: 1128px) {
   .services-wrapper {
@@ -645,7 +756,8 @@ footer .about-us {
 
 .responsive-galery-bg {
   background-color: #222831;
-  height: 50px; }
+  height: 50px;
+  padding-top: 5px; }
 
 @media (max-width: 1129px) {
   .mobile-rooms {
@@ -668,7 +780,7 @@ footer .about-us {
     height: 300px;
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.205) 10%, rgba(0, 0, 0, 0.267) 100%), url("/pics/living-room.jpg");
     background-attachment: fixed;
-    background-position: 40% -20%;
+    background-position: 50% -20%;
     background-repeat: no-repeat;
     background-size: auto 70%; }
     .welcome h4 {
@@ -703,8 +815,7 @@ footer .about-us {
     padding-left: 0px;
     margin-bottom: 30px;
     display: grid;
-    grid-template-columns: auto auto;
-    clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 100% 90%, 95% 100%, 0% 100%, 0 100%); }
+    grid-template-columns: auto auto; }
     .room-card .dash {
       margin: 30px 0px 0px 0px;
       width: 3px;
@@ -754,7 +865,7 @@ footer .about-us {
     color: #ffffff;
     cursor: pointer;
     font-size: 1rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     border: 0;
     transition: all 0.5s;
     border-radius: 10px;
@@ -763,7 +874,7 @@ footer .about-us {
     .btn-book-now::after {
       display: inline-block;
       width: auto;
-      height: 70px;
+      height: 50px;
       margin-right: 15px;
       content: "";
       background: url("/pngs-svgs/airbnb.svg") no-repeat 0 0;
@@ -772,19 +883,19 @@ footer .about-us {
       font-weight: 400;
       position: absolute;
       left: 70%;
-      top: 35%;
+      top: 28%;
       right: 5%;
       bottom: 0;
       opacity: 0; }
     .btn-book-now:hover {
       background: #2b2bff;
-      transition: all 0.5s;
+      transition: all 0.18s;
       border-radius: 10px;
       box-shadow: 0px 6px 15px #0000ff61;
-      padding: 1.5rem 3.5rem 1.5rem 1.5rem; }
+      padding: 0.7rem 3rem 0.7rem 1.5rem; }
       .btn-book-now:hover::after {
         opacity: 1;
-        transition: all 0.5s; } }
+        transition: all 0.2s; } }
 
 .dash-and-dot-into-card {
   display: flex;
@@ -834,5 +945,4 @@ footer .about-us {
     background-size: 130% auto; } }
 
 .container-galeria-en-grid div button {
-  background-color: #222831;
   color: whitesmoke; }

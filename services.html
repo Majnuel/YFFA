@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
+    <link rel="icon" href="/pngs-svgs/icons8-wine-glass-96.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,6 +14,7 @@
 </head>
 <body>
     <div class="blank">
+        <h1 class="hide-h1">our services</h1>
         <div class="header-flex">
             <div class="breadcrumb d-flex justify-content-start align-items-end">
                 <nav aria-label="breadcrumb">
@@ -22,7 +24,6 @@
                     </ol>
                 </nav>
             </div>
-
             <div class="d-flex justify-content-end responsive-nav blank-height-for-flex">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,16 +31,15 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link active navbar-link-style" href="rooms.html">Rooms</a>
-                            <a class="nav-item nav-link navbar-link-style hide-nav-item" href="services.html">Services<span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link navbar-link-style" href="index.html">home</a>
+                            <a class="nav-item nav-link navbar-link-style" href="rooms.html">Rooms</a>
+                            <a class="nav-item nav-link active navbar-link-style" href="services.html">Services<span class="sr-only">(current)</span></a>
                             <a class="nav-item nav-link navbar-link-style" href="contact-us.html">Contact us</a>
-                            <a class="nav-item nav-link navbar-link-style" href="book.html">book a room</a>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
-
     </div>
     <div class="services-wrapper">
         <h2 class="container text-center">services</h2>
@@ -124,7 +124,7 @@
             <h2 class="container text-center">services</h2>
             <div class="row">
                 <div class="col-md-3 col-sm-4 col-6 text-center">
-                    <img src="/pngs-svgs/breakfast-icon.png" alt="">
+                    <img class="resize" src="/pngs-svgs/breakfast-icon.png" alt="">
                     <h4>breakfast</h4>
                     <p>HOME-MADE BREAD, JAM and YOGURT. <br> + coffee, tea, juice, mate, milk, toasts, butter, cream cheese, season-fruits and cereals (self-service and booked separately)</p>
                 </div>
@@ -134,7 +134,7 @@
                     <p>Let us give you the best advice as to how to do it like a local. We book tours for you and also guide them ourselves</p>
                 </div>
                 <div class="col-md-3 col-sm-4 col-6 text-center">
-                    <img src="/pngs-svgs/garden-icon.png" alt="">
+                    <img class="garden-resize" src="/pngs-svgs/garden-icon.png" alt="">
                     <h4>Garden</h4>
                     <p>Enjoy our beautiful garden and patio for having breakfast, working or simply lounging </p>
                 </div>
@@ -146,22 +146,22 @@
             </div>
             <div class="row">
                 <div class="col-md-3 col-sm-4 col-6 text-center">
-                    <img src="/pngs-svgs/pool-icon.png" alt="">
+                    <img class="resize" src="/pngs-svgs/pool-icon.png" alt="">
                     <h4>pool</h4>
                     <p>Perfect for relaxing in spring and summer time</p>
                 </div>
                 <div class="col-md-3 col-sm-4 col-6 text-center">
-                    <img src="/pngs-svgs/no-car-needed-icon.png" alt="" class="walking-icon">
+                    <img class="walking-icon walking-icon-resize" src="/pngs-svgs/no-car-needed-icon.png" alt="" class="walking-icon">
                     <h4>No car needed</h4>
                     <p>Everything you need is within walking distance: wineries, groceries, restaurants, bars, coffee shops, bakeries, pharmacy, clinics, etc.</p>
                 </div>
                 <div class="col-md-3 col-sm-4 col-6 text-center">
-                    <img src="/pngs-svgs/grill-icon.png" alt="">
+                    <img class="resize" src="/pngs-svgs/grill-icon.png" alt="">
                     <h4>Woodfire-Grill</h4>
                     <p>Enjoy an Argentinian grill and learn how to cook it yourself</p>
                 </div>
                 <div class="col-md-3 col-sm-4 col-6 text-center">
-                    <img src="/pngs-svgs/parking-icon.png" alt="">
+                    <img class="resize" src="/pngs-svgs/parking-icon.png" alt="">
                     <h4>Free parking in premises</h4>
                     <p>Dont worry about parking</p>
                 </div>
@@ -210,7 +210,6 @@
             </div>
         </div>
     </div>
-
     <footer>
         <div class="collapse" id="collapse-test">
             <div class="about-us">
@@ -219,27 +218,18 @@
                     Travel bloggers, influencers and musicians: contact us for free stays<br>
             </div>
         </div>
-        <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">home</a>
+        <ul class="nav d-flex flex-row align-items-center">
+            <li class="nav-item right-border">
+                <a class="nav-link" href="index.html">home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">|</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="book.html">book now</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">|</a>
+            <li class="nav-item right-border">
+              <a class="nav-link" href="rooms.html">book now</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-toggle="collapse" href="#collapse-test">about us</a>
             </li>
-          </ul>
+        </ul>
     </footer>
-
-
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
